@@ -1,0 +1,65 @@
+.selectControlBox{
+    background: white;
+    /*position: relative;*/
+}
+.selectControlBtn{
+    height:28px;
+    line-height: 28px;
+    border:1px solid #dcdcdc;
+    display:block;
+    cursor:pointer;
+    text-indent: 5px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.selectControlMenu{
+    margin-top:10px;
+    border:1px solid #dcdcdc;
+    padding-bottom:10px;}
+.listCon{
+    border: 1px solid #dcdcdc;
+    display: none;
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 3px 2px #ccc;
+}
+.listCon .inputCon{
+    padding: 5px 10px;
+}
+.listCon input{
+    width: 100%!important;
+    height:22px;
+    line-height:22px;
+    border:1px solid #dcdcdc;
+    background:#fff;
+}
+.listCon ul{
+    max-height: 270px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+}
+.listCon ul li{
+    padding-bottom: 0;
+    margin-right: 0;
+    display: block;
+    float: none;
+    height:25px;
+    line-height: 24px;
+    margin-bottom: 2px;
+    cursor:pointer;
+    padding-left:10px;
+    color:#999;
+}
+.listCon ul li:hover {
+    background: #f1f1f1;
+}
+.sc_selected{
+    background-color: #ccc;
+    color: #FFFFFF!important;
+}
+.sc_selected:hover{
+    background-color: #ccc!important;
+    color: #FFFFFF!important;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="release/selectControl.min.css">
+    <script src="release/jquery.min.js"></script>
+    <script src="release/selectControl.min.js"></script>
+</head>
+<script>
+    $(function(){
+        var init = new SelectControl();
+        init.init('#mulipleSelect');
+        var init2 =new SelectControl();
+        init2.init('#singleSelect');
+    })
+</script>
+<style>
+    body,html{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .selDiv{
+        padding: 10px 0 0 40px;
+    }
+</style>
+<body style="height: 100%;">
+<div style="height: 100%;margin: 0 auto;width: 1000px;background-color: #f8f8f8;box-shadow:  0 0 5px #999">
+    <div class="selDiv">
+        <h1>多选搜索下拉</h1>
+        <select id="mulipleSelect" multiple='multiple' style="width: 300px">
+            <option>测试1</option>
+            <option>测试2</option>
+            <option>测试3</option>
+            <option>测试4</option>
+            <option>测试5</option>
+            <option>测试6</option>
+            <option>测试7</option>
+            <option>测试8</option>
+        </select>
+    </div>
+    <div  class="selDiv">
+        <h1>单选搜索下拉</h1>
+        <select id="singleSelect" style="width: 300px">
+            <option>测试1</option>
+            <option>测试2</option>
+            <option>测试3</option>
+            <option>测试4</option>
+            <option>测试5</option>
+            <option>测试6</option>
+            <option>测试7</option>
+            <option>测试8</option>
+        </select>
+    </div>
+
+</div>
+</body>
+</html>
