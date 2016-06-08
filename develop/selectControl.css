@@ -10,7 +10,9 @@
     cursor:pointer;
     text-indent: 5px;
     border-radius: 5px;
-    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .selectControlMenu{
     margin-top:10px;
@@ -35,13 +37,11 @@
     background:#fff;
 }
 .listCon ul{
-    max-height: 270px;
-    overflow-y: auto;
-    padding: 0;
-    margin: 0;
+     max-height: 270px;
+     overflow-y: auto;
 }
 .listCon ul li{
-    padding-bottom: 0;
+    padding: 0 10px;
     margin-right: 0;
     display: block;
     float: none;
@@ -49,8 +49,10 @@
     line-height: 24px;
     margin-bottom: 2px;
     cursor:pointer;
-    padding-left:10px;
     color:#999;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .listCon ul li:hover {
     background: #f1f1f1;

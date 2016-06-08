@@ -7,10 +7,10 @@ function SelectControl(){
         $this = $(plu);
         $this.hide();
         var initSelectedArr = $this.find("option:selected");
-        if(!$this.attr("multiple")){
+        if(!$this.attr("type-multiple")){
             multiple = false;
         }else{
-            multiple = $this.attr("multiple");
+            multiple = $this.attr("type-multiple");
         }
         var selectCon;
         var a = $this.siblings(".selectControlBox");
@@ -29,7 +29,7 @@ function SelectControl(){
         var liData = $this.find("option");
         for(var liIndex = 0;liIndex<liData.length;liIndex++){
             $(liData[liIndex]).val();
-            var liItem= $("<li value='"+$(liData[liIndex]).val()+"'>"+$(liData[liIndex]).text()+"</li>");
+            var liItem= $("<li title="+$(liData[liIndex]).text()+" value='"+$(liData[liIndex]).val()+"'>"+$(liData[liIndex]).text()+"</li>");
             if($(liData[liIndex]).prop("selected")){
                 liItem.addClass("sc_selected");
             }
@@ -77,7 +77,7 @@ function SelectControl(){
             ids = ids.substr(0,ids.length-1);
             $ids = ids;
             $labels = labels;
-            display.html(labels);
+            display.html(labels).attr('title',labels);
             display.attr("value",ids);
             //$this.attr('value',$ids);
             //$this.text($labels);
